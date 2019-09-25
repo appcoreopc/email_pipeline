@@ -8,5 +8,4 @@ df = spark.read.format("csv").option("inferSchema", "false").option("header", "f
 for eachrow in df.rdd.collect():
     mailer = Emailer()
     mailer.send('test demo', eachrow[2])
-    print("sending email to ", eachrow[1])
 

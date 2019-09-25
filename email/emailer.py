@@ -1,7 +1,7 @@
 class Emailer:
     # constructor 
-    def send(self, receiver, title):
-        print('sending....')
+    def send(self, title, receiver):
+        print('sending....', title, receiver)
         # msg = EmailMessage()
         # msg.set_content("ttestig")
         # msg['Subject'] = title
