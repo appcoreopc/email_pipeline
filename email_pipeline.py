@@ -1,12 +1,12 @@
 from pyspark.sql import SparkSession
+from email.emailer import *
 
 spark = SparkSession.builder.appName("Test").getOrCreate()
 
 df = spark.read.format("csv").option("inferSchema", "false").option("header", "false").option("sep", ",").load("data/user.csv")
 
-df.show()
-
-print(type(df))
-
 for eachrow in df.rdd.collect():
-    print(eachrow[1])
+    mailer = Emailer()
+    mailer.send('test demo', eachrow[2])
+    print("sending email to ", eachrow[1])
+
