@@ -5,6 +5,8 @@
 #               --conf "spark.mongodb.output.uri=mongodb://127.0.0.1/apptest.product" \
 #               --packages org.mongodb.spark:mongo-spark-connector_2.11:2.4.1
 
+## using spark-submit with option to execute script from command line
+## spark-submit --packages org.mongodb.spark:mongo-spark-connector_2.11:2.4.1 mongo_email_datapipeline.py
 
 from pyspark.sql import SparkSession
 
