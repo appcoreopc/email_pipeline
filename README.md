@@ -19,10 +19,6 @@ Mongo with Spark mongo driver
 
 
 
-
-
-
-
 Some kafka codes 
 
 https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
@@ -54,4 +50,10 @@ df = spark \
   .option("subscribePattern", "topic.*") \
   .load()
 df.selectExpr("CAST(key AS STRING)", "CAST(value AS STRING)")
+
+
+
+https://towardsdatascience.com/lets-build-a-streaming-data-pipeline-e873d671fc57
+
+https://eng.uber.com/uber-big-data-platform/
 
