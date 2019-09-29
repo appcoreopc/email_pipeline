@@ -25,6 +25,9 @@ Mongo with Spark mongo driver
 
 Some kafka codes 
 
+https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html
+
+
 # Subscribe to 1 topic
 df = spark \
   .readStream \
