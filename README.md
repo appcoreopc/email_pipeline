@@ -9,3 +9,14 @@ Excel drivers
 https://github.com/crealytics/spark-excel
 
 
+Kafka integration 
+
+
+CSV streaming 
+
+
+Mongo with Spark mongo driver
+
+
+
+
